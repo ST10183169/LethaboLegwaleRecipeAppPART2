@@ -1,4 +1,16 @@
 # LethaboLegwaleRecipeAppPART2
+Improvements: Use of Generic Collections: I replaced the arrays used for storing recipes, ingredients, and steps with generic List collections (List<Recipe>, List<Ingredient>, List<string>).
+
+Recipe Name: I added a Name property to the Recipe class, allowing the user to enter a name for each recipe.
+
+Displaying Recipes: I added a new option to display all recipes, sorting them in alphabetical order by name using LINQ's OrderBy method.
+
+Ingredient Information: I enhanced the Ingredient class by adding properties for Calories and FoodGroup. This allows the user to enter the number of calories and the food group for each ingredient.
+
+Total Calories Calculation: I added a CalculateTotalCalories method to the Recipe class, which sums up the calories of all ingredients and returns the total calories.
+
+Calories Exceeded Notification: I implemented a delegate NotifyCaloriesExceeded in the Program class, which is invoked when a recipe's total calories exceed 300. This notifies the user about the excessive calorie content.
+
 namespace LethaboLegwaleRecipeAppPART2
 {
     internal class Program
